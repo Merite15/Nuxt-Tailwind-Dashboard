@@ -1,12 +1,3 @@
-<script setup>
-// import gsap from "gsap";
-// import { Draggable } from 'gsap/Draggable';
-// import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
-// import { ScrollTrigger } from 'gsap/ScrollTrigger';
-
-// gsap.registerPlugin(ScrollTrigger, ScrollToPlugin, Draggable);
-</script>
-
 <template>
   <div>
     <NuxtLayout>

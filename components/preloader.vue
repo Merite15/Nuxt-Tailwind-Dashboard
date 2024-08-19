@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { onMounted, ref, unref } from 'vue';
+
 const preloaderRef = ref();
 
 onMounted(() => {
@@ -17,13 +19,13 @@ onMounted(() => {
                 unref(preloaderRef).classList.add("hide");
             }
         }
-    }, 100);
+    }, 300);
 });
 </script>
 
 <template>
     <div ref="preloaderRef"
-        class="preloader fixed top-0 left-0 w-full h-screen flex items-center justify-center bg-gradient-to-br from-gray-700 via-gray-900 to-black  transition-opacity duration-300 z-50">
+        class="fixed top-0 left-0 z-[9999] flex items-center justify-center w-full h-screen transition-opacity duration-300 preloader bg-cyan-500">
         <span class="loader" />
     </div>
 </template>
@@ -34,49 +36,47 @@ onMounted(() => {
 }
 
 .loader {
-    width: 48px;
-    height: 48px;
-    display: block;
-    margin: 15px auto;
+    width: 70px;
+    height: 35px;
     position: relative;
-    color: #FFF;
-    box-sizing: border-box;
-    animation: rotation 1s linear infinite;
+    overflow: hidden;
 }
 
-.loader::after,
-.loader::before {
-    content: '';
-    box-sizing: border-box;
+.loader:before {
+    content: "";
+    width: 70px;
+    height: 70px;
     position: absolute;
-    width: 24px;
-    height: 24px;
-    top: 50%;
-    left: 50%;
-    transform: scale(0.5) translate(0, 0);
-    background-color: #FFF;
+    left: 0;
+    top: 0;
+    border: 5px solid #0000;
+    border-color: #fff #fff #0000 #0000;
     border-radius: 50%;
-    animation: animLoader 1s infinite ease-in-out;
+    box-sizing: border-box;
+    animation: rotate 3s ease-in-out infinite;
+    transform: rotate(-200deg);
 }
 
-.loader::before {
-    background-color: #FF3D00;
-    transform: scale(0.5) translate(-48px, -48px);
-}
-
-@keyframes rotation {
+@keyframes rotate {
     0% {
-        transform: rotate(0deg);
+        border-width: 10px;
+    }
+
+    25% {
+        border-width: 3px;
+    }
+
+    50% {
+        transform: rotate(115deg);
+        border-width: 10px;
+    }
+
+    75% {
+        border-width: 3px;
     }
 
     100% {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes animLoader {
-    50% {
-        transform: scale(1) translate(-50%, -50%);
+        border-width: 10px;
     }
 }
 </style>

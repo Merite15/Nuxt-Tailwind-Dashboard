@@ -1,5 +1,3 @@
-const siteUrl = "http://localhost:3000";
-
 export default defineNuxtConfig({
   app: {
     pageTransition: { name: "page", mode: "out-in" },
@@ -52,17 +50,8 @@ export default defineNuxtConfig({
   ],
   modules: [
     '@nuxt/fonts',
-    '@nuxtjs/seo',
-    'nuxt-swiper',
     '@nuxt/ui',
-    "@nuxt/image",
-    '@hypernym/nuxt-anime',
-    '@hypernym/nuxt-gsap'
   ],
-
-  build: {
-    transpile: ['gsap'],
-  },
 
   router: {
     options: {
@@ -80,20 +69,6 @@ export default defineNuxtConfig({
     exposeConfig: true,
     quiet: true,
     viewer: true,
-  },
-
-  site: {
-    url: siteUrl,
-    name: "website",
-    description: "Website",
-    favicon: "/logo.ico",
-  },
-
-  image: {
-    dir: 'assets/img',
-    format: ["webp"],
-    provider: 'ipx',
-    quality: 80,
   },
 
   colorMode: {
