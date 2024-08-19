@@ -10,7 +10,7 @@ const handleError = () => clearError({ redirect: '/' })
     <section class="">
         <div class="px-5 py-16 md:px-10 md:py-20">
             <div class="mx-auto flex w-full max-w-3xl flex-col items-center text-center">
-                <img src="~/assets/img/logo.webp" alt=""
+                <img src="~/assets/img/logo.svg" alt=""
                     class="mx-auto rounded-full mb-8 inline-block h-56 w-56 flex-none object-cover" />
                 <h1 class="mb-4 text-4xl font-bold md:text-6xl"> {{
                     `Erreur ${error?.statusCode}`

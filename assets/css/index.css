@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
     padding: 0;
     margin: 0;
     list-style: none;
@@ -24,37 +25,13 @@
     background-color: #a8bbbf;
 }
 
-.animate-hero {
-    animation: hero-thumb-sm-animation 4s linear infinite alternate;
+.slide-fade-enter-active,
+.slide-fade-leave-active {
+    transition: opacity 0.3s, transform 0.3s;
 }
 
-@keyframes hero-thumb-sm-animation {
-    0% {
-        transform: translateX(50px)
-    }
-
-    to {
-        transform: translateX(0)
-    }
-}
-
-.animate-banner {
-    animation: animate 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-}
-
-@keyframes animate {
-    0% {
-        letter-spacing: -0.5em;
-        transform: translateZ(-700px) translateY(500px);
-        opacity: 0;
-    }
-
-    40% {
-        opacity: 0.6;
-    }
-
-    100% {
-        transform: translateZ(0) translateY(0);
-        opacity: 1;
-    }
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+    opacity: 0;
+    transform: translateX(10px);
 }

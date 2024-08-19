@@ -1,14 +1,17 @@
 <template>
-    <main
-        class="min-h-screen relative text-white font-OpenSans w-full bg-gradient-to-br from-gray-700 via-gray-900 to-black">
+    <div class="relative">
         <Preloader />
 
-        <UContainer>
-            <NavigationHeader />
+        <NavigationHeader />
 
+        <div>
             <slot />
+        </div>
 
-            <NavigationFooter />
-        </UContainer>
-    </main>
+        <ToTop />
+
+        <NavigationFooter />
+    </div>
 </template>
+
+<style scoped></style>
