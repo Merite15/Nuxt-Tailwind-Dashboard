@@ -27,8 +27,8 @@ onUnmounted(() => {
 <template>
     <div ref="scrollTopButton" class="fixed bottom-0 flex justify-end invisible w-full pb-3 pr-5 transition lg:pr-16">
         <div class="text-gray-400 transition hover:text-blue-400">
-            <i @click="scrollToTop"
-                class="p-2 text-xl text-blue-500 bg-white border rounded-full shadow cursor-pointer fa-solid fa-arrow-up"></i>
+            <UButton @click="scrollToTop" icon="i-heroicons-arrow-up" size="sm" color="primary" square
+                variant="solid" />
         </div>
     </div>
 </template>

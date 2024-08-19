@@ -77,9 +77,15 @@ watch(tasks, (newVal) => {
                         v-model="todo.name" required type="text">
                 </div>
 
-                <ErrorMessage :message="message" />
+                <div class="px-2">
+                    <UAlert v-show="message && message.length > 0" icon="i-heroicons-exclamation-triangle" color="red"
+                        variant="solid" :title="message" />
+                </div>
 
-                <LoadingButton variant="default" :status="loading" title="Soumettre" />
+                <div class="p-2 w-full">
+                    <UButton type="submit" class="w-full flex items-center justify-center" label="Soumettre"
+                        :loading="loading" />
+                </div>
             </form>
 
             <TransitionGroup name="slide-fade" tag="ol" v-if="tasks && tasks.length > 0" appear>
@@ -102,8 +108,8 @@ watch(tasks, (newVal) => {
                             v-else>
                             Annuler</button>
 
-                        <i @click="remove(todo.name)"
-                            class="text-xl p-1.5 text-red-500 bg-white border rounded-md shadow cursor-pointer fa-solid fa-trash"></i>
+                        <UButton @click="remove(todo.name)" icon="i-heroicons-trash" size="sm" color="red" square
+                            variant="solid" />
                     </li>
                 </div>
             </TransitionGroup>

@@ -105,7 +105,10 @@ watch([listOfItems, earnings, expenses], ([newItems, newEarn, newExpense]) => {
                     </select>
                 </div>
 
-                <UButton label="Soumettre" :loading="loading" />
+                <div class="p-2 w-full">
+                    <UButton type="submit" class="w-full flex items-center justify-center" label="Soumettre"
+                        :loading="loading" />
+                </div>
             </form>
 
             <div class="w-1/2 bg-white border rounded-md shadow-sm h-fit">

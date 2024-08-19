@@ -23,7 +23,7 @@ const randomize = () => {
     generateLoading.value = true
 
     setTimeout(() => {
-        citation.value = citations.value[Math.floor(Math.floor(Math.random() * citations.value.length))]
+        citation.value = citations[Math.floor(Math.floor(Math.random() * citations.length))]
 
         generateLoading.value = false
     }, Timeout)
@@ -81,13 +81,16 @@ const removeFavorite = (item: string) => {
                         {{ citation }}
                     </li>
 
-                    <Skeleton v-else />
+                    <USkeleton v-else class="h-10 w-full shadow-sm" />
                 </div>
             </TransitionGroup>
 
-            <ErrorMessage :message="errorMessage" />
+            <div class="px-2">
+                <UAlert v-show="errorMessage && errorMessage.length > 0" icon="i-heroicons-exclamation-triangle"
+                    color="red" variant="solid" :title="errorMessage" />
+            </div>
 
-            <div class="flex space-x-2">
+            <div class="flex space-x-2 px-2">
                 <UButton color="primary" @click="randomize" :loading="generateLoading" label="Générer" />
 
                 <UButton color="blue" @click="addFavorite()" :loading="loading" label="Ajouter

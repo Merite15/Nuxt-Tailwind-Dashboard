@@ -1,14 +1,11 @@
 {
   "cSpell.ignoreWords": [
-    "Raleway",
-    "gsap",
+    "Pinia",
+    "Todos",
     "heroicons",
-    "iconify",
-    "linkedin",
-    "nuxt",
-    "nuxtjs",
-    "octicon",
-    "swiper",
-    "tailwindcss"
+    "pinia",
+    "tailwindcss",
+    "todos",
+    "unref"
   ]
 }
