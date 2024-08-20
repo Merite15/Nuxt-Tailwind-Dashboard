@@ -47,6 +47,14 @@ const removeItem = (item: BudgetType) => {
     budget.value = { amount: 0, type: '', description: '' };
 }
 
+const removeItems = () => {
+    listOfItems.value = []
+
+    earnings.value = 0
+
+    expenses.value = 0
+}
+
 const addItem = () => {
     loading.value = true;
 
@@ -126,7 +134,10 @@ watch([listOfItems, earnings, expenses], ([newItems, newEarn, newExpense]) => {
                     <p class="p-2">Solde : <span class="font-bold">{{ earnings - expenses }}</span></p>
                 </div>
 
-                <h2 class="p-2 my-2 text-lg border-y">Liste des achats</h2>
+                <h2 class="p-2 my-2 text-lg flex items-center gap-x-2 border-y">Liste des achats <span>
+                        <UButton @click="removeItems()" label="Tout retirer" size="sm" color="red" square
+                            variant="solid" />
+                    </span></h2>
 
                 <TransitionGroup name="slide-fade" tag="ol" v-if="listOfItems && listOfItems.length > 0" appear>
                     <li class="flex items-center p-2 gap-x-3" v-for="item in listOfItems" :key="item.description">
