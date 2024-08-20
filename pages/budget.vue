@@ -33,6 +33,8 @@ const listOfItems = ref<BudgetType[]>([])
 
 const loading = ref(false);
 
+const toast = useToast()
+
 const removeItem = (item: BudgetType) => {
     listOfItems.value = listOfItems.value.filter(task => task.description !== item.description);
 
@@ -60,6 +62,11 @@ const addItem = () => {
         budget.value = { amount: 0, type: '', description: '' };
 
         loading.value = false;
+
+        toast.add({
+            title: 'Budget ajouté.',
+            icon: 'i-octicon-check',
+        })
     }, Timeout);
 };
 

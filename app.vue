@@ -8,25 +8,30 @@
 </template>
 
 <style>
-.page-enter-active,
-.page-leave-active {
-  transition: all 0.4s;
+.slide-left-enter-active,
+.slide-left-leave-active,
+.slide-right-enter-active,
+.slide-right-leave-active {
+  transition: all 0.2s;
 }
 
-.page-enter-from,
-.page-leave-to {
+.slide-left-enter-from {
   opacity: 0;
-  filter: blur(1rem);
+  transform: translate(50px, 0);
 }
 
-.layout-enter-active,
-.layout-leave-active {
-  transition: all 0.4s;
-}
-
-.layout-enter-from,
-.layout-leave-to {
+.slide-left-leave-to {
   opacity: 0;
-  filter: blur(1rem);
+  transform: translate(-50px, 0);
+}
+
+.slide-right-enter-from {
+  opacity: 0;
+  transform: translate(-50px, 0);
+}
+
+.slide-right-leave-to {
+  opacity: 0;
+  transform: translate(50px, 0);
 }
 </style>
