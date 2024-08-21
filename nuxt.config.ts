@@ -3,7 +3,7 @@ export default defineNuxtConfig({
     pageTransition: { name: 'slide-right', mode: 'out-in' },
     layoutTransition: { name: 'slide-right', mode: 'out-in' },
     head: {
-      title: "WEBSITE",
+      title: "FORMATION-NUXT",
       meta: [
         {
           charset: "utf-8",

@@ -1,11 +1,8 @@
-<script setup lang='ts'>
-
-</script>
-
 <template>
     <div class="max-w-6xl mx-auto py-20 font-[sans-serif]">
         <h2 class="mb-16 text-2xl font-extrabold text-center text-gray-800 sm:text-4xl">Discover Our Exclusive Features
         </h2>
+
         <div class="grid gap-12 lg:grid-cols-3 md:grid-cols-2">
             <div class="text-center">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="#007bff" class="inline-block w-8 mb-6"

@@ -1,7 +1,3 @@
-<script setup lang='ts'>
-
-</script>
-
 <template>
     <footer class="p-10 tracking-wide bg-gray-900">
         <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">

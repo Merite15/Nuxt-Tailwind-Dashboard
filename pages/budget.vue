@@ -135,8 +135,8 @@ watch([listOfItems, earnings, expenses], ([newItems, newEarn, newExpense]) => {
                 </div>
 
                 <h2 class="p-2 my-2 text-lg flex items-center gap-x-2 border-y">Liste des achats <span>
-                        <UButton @click="removeItems()" label="Tout retirer" size="sm" color="red" square
-                            variant="solid" />
+                        <UButton v-if="listOfItems.length > 0" @click="removeItems()" label="Tout retirer" size="sm"
+                            color="red" square variant="solid" />
                     </span></h2>
 
                 <TransitionGroup name="slide-fade" tag="ol" v-if="listOfItems && listOfItems.length > 0" appear>

@@ -1,6 +1,4 @@
 <script setup>
-import { onMounted, onUnmounted, ref } from "vue";
-
 let scrollTopButton = ref(null);
 
 const scrollToTop = () => {

@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { onMounted, ref, unref } from 'vue';
-
 const preloaderRef = ref();
 
 onMounted(() => {
