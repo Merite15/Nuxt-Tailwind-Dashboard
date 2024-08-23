@@ -1,9 +1,9 @@
 <script setup lang='ts'>
 onMounted(() => {
-    const storedTasks = localStorage.getItem('favorites');
+    const storedFavorites = localStorage.getItem('favorites');
 
-    if (storedTasks) {
-        favorites.value = JSON.parse(storedTasks);
+    if (storedFavorites) {
+        favorites.value = JSON.parse(storedFavorites);
     }
 })
 
