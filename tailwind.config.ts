@@ -15,8 +15,8 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                OpenSans: ['Open Sans', 'sans-serif'],
-                Raleway: ['Raleway', 'sans-serif'],
+                primary: ['Poppins'],
+                secondary: ['Roboto']
             },
             colors: {
             },
