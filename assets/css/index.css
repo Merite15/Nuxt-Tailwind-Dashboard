@@ -1,18 +1,6 @@
-@font-face {
-    font-family: Poppins, 'sans-serif';
-    font-weight: 400;
-    src: url('~assets/fonts/Poppins-Bold.ttf') format('woff');
-}
-
-@font-face {
-    font-family: Roboto, 'sans-serif';
-    font-weight: 400;
-    src: url('~assets/fonts/Roboto-Bold.ttf') format('woff');
-}
-
 * {
     box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
+    font-family: "Albert Sans", sans-serif;
     padding: 0;
     margin: 0;
     list-style: none;
@@ -35,15 +23,4 @@
 
 ::-webkit-scrollbar-thumb:hover {
     background-color: #a8bbbf;
-}
-
-.slide-fade-enter-active,
-.slide-fade-leave-active {
-    transition: opacity 0.3s, transform 0.3s;
-}
-
-.slide-fade-enter-from,
-.slide-fade-leave-to {
-    opacity: 0;
-    transform: translateX(10px);
 }

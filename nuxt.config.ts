@@ -41,7 +41,7 @@ export default defineNuxtConfig({
 
   icon: {
     serverBundle: {
-      collections: ['bx', 'heroicons', 'material-symbols', 'mdi', 'ph', 'octicon', 'tabler', 'line-md']
+      collections: ['bx', 'heroicons', 'material-symbols', 'mdi', 'ph', 'octicon', 'logos', 'tabler', 'line-md']
     }
   },
 
