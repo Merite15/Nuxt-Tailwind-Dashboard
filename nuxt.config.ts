@@ -29,6 +29,12 @@ export default defineNuxtConfig({
     },
   },
 
+  routeRules: {
+    '/': { prerender: true },
+    '/auth/**': { prerender: true },
+    '/dashboard/**': { ssr: false },
+  },
+
   compatibilityDate: '2024-08-13',
 
   devtools: {

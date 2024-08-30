@@ -67,8 +67,7 @@ async function Login() {
                         </UFormGroup>
 
                         <p class="text-sm font-light text-end text-black">
-                            <NuxtLink to="/"
-                                class="font-medium text-gray-700 dark:text-white hover:underline hover:text-blue-500 hover:dark:text-blue-500">
+                            <NuxtLink to="/" class="font-medium hover:underline text-blue-500 hover:dark:text-blue-500">
                                 Mot de passe oublié
                             </NuxtLink>
                         </p>
@@ -80,7 +79,7 @@ async function Login() {
 
                         <p class="text-center text-[15px] font-medium text-black dark:text-white">
                             J'ai deja un compte. <NuxtLink to="/"
-                                class=" text-gray-700 dark:text-blue-500 hover:underline hover:text-blue-500">
+                                class=" text-blue-500 hover:underline hover:text-blue-700">
                                 Se connecter
                             </NuxtLink>
                         </p>
