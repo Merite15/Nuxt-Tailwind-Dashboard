@@ -7,7 +7,24 @@ interface CardProps {
     color: string
 }
 
-defineProps<CardProps>()
+const props = defineProps<CardProps>()
+
+const variantClasses = computed(() => {
+    switch (props.color) {
+        case 'violet':
+            return 'border-violet-100 bg-violet-50 text-violet-500';
+        case 'emerald':
+            return 'border-emerald-100 bg-emerald-50 text-emerald-500';
+        case 'rose':
+            return 'border-rose-100 bg-rose-50 text-rose-500';
+        case 'default':
+            return 'border-violet-100 bg-violet-50 text-violet-500'
+    }
+});
+
+const btnClasses = computed(() => {
+    return `${variantClasses.value}`;
+});
 </script>
 
 <template>
@@ -21,8 +38,7 @@ defineProps<CardProps>()
                 </dd>
             </dl>
 
-            <div
-                :class="`flex h-12 w-12 items-center justify-center rounded-xl border border-${color}-100 bg-${color}-50 text-${color}-500`">
+            <div :class="btnClasses" class="flex h-12 w-12 items-center justify-center rounded-xl border">
 
                 <Icon :name="icon" />
             </div>
