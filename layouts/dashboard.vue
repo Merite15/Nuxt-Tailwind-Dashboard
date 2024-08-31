@@ -5,7 +5,7 @@ provide('confirm', confirm)
 </script>
 
 <template>
-    <div class="flex h-screen tracking-wider fixed w-full bg-tertiary">
+    <div class="flex h-screen tracking-wider fixed w-full transition duration-200">
         <Preloader />
 
         <NavigationSidebar />

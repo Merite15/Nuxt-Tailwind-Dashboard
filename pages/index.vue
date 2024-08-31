@@ -26,7 +26,8 @@ async function Login() {
 
 <template>
     <div class="flex justify-between min-h-screen">
-        <div class="lg:w-1/2 w-full dark:bg-slate-900 dark:text-white relative p-6  text-black ">
+        <div
+            class="lg:w-1/2 w-full dark:bg-slate-900 transition-colors ease-in-out duration-200 delay-75 dark:text-white relative p-6  text-black ">
             <div class=" lg:px-0 px-6 flex ml-20 flex-col">
 
                 <div class="flex justify-between items-center">
@@ -95,7 +96,8 @@ async function Login() {
                 </div>
             </div>
 
-            <div class="absolute z-[2] left-0 right-0 top-0 bottom-0 text-white dark:text-slate-900 overflow-hidden">
+            <div
+                class="absolute z-[2] left-0 right-0 top-0 bottom-0 text-white dark:text-slate-900 transition-colors ease-in-out duration-200 delay-75 overflow-hidden">
                 <svg viewBox="0 0 100 1544" fill="none" xmlns="http://www.w3.org/2000/svg"
                     class="scale-[2] w-auto h-full">
                     <path d="M0 0h100v386l-50 772v386H0V0z" fill="currentColor"></path>
