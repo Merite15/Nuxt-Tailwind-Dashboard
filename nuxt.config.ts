@@ -1,7 +1,7 @@
 export default defineNuxtConfig({
   app: {
-    pageTransition: { name: 'slide-right', mode: 'out-in' },
-    layoutTransition: { name: 'slide-right', mode: 'out-in' },
+    pageTransition: { name: 'page', mode: 'out-in' },
+    layoutTransition: { name: 'layout', mode: 'out-in' },
     head: {
       title: "FORMATION-NUXT",
       meta: [

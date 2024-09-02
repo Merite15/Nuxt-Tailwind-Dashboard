@@ -29,7 +29,7 @@ const btnClasses = computed(() => {
 
 <template>
     <div
-        class="flex flex-col rounded-lg border border-slate-200 bg-white dark:bg-slate-900 dark:border-slate-900 hover:border-slate-300 active:border-violet-300">
+        class="flex flex-col rounded-lg border border-slate-200 bg-white hover:border-slate-300 active:border-violet-300">
         <div class="flex grow items-center justify-between p-5">
             <dl>
                 <dt class="text-2xl font-bold">${{ number.toLocaleString('de-DE') }}</dt>
@@ -44,7 +44,7 @@ const btnClasses = computed(() => {
             </div>
         </div>
 
-        <div class="border-t border-slate-100 dark:border-slate-800 px-5 py-3 text-xs font-medium text-slate-500">
+        <div class="border-t border-slate-100  px-5 py-3 text-xs font-medium text-slate-500">
             <p>{{ provenance }}</p>
         </div>
     </div>

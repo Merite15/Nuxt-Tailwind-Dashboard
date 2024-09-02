@@ -8,30 +8,31 @@
 </template>
 
 <style>
-.slide-left-enter-active,
-.slide-left-leave-active,
-.slide-right-enter-active,
-.slide-right-leave-active {
-  transition: all 0.2s;
+.page-enter-active {
+  transition: all 0.2s ease-out;
 }
 
-.slide-left-enter-from {
-  opacity: 0;
-  transform: translate(50px, 0);
+.page-leave-active {
+  transition: all 0.2s cubic-bezier(1, 0.5, 0.8, 1);
 }
 
-.slide-left-leave-to {
+.page-enter-from,
+.page-leave-to {
+  transform: translateY(20px);
   opacity: 0;
-  transform: translate(-50px, 0);
 }
 
-.slide-right-enter-from {
-  opacity: 0;
-  transform: translate(-50px, 0);
+.layout-enter-active {
+  transition: all 0.2s ease-out;
 }
 
-.slide-right-leave-to {
+.layout-leave-active {
+  transition: all 0.2s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.layout-enter-from,
+.layout-leave-to {
+  transform: translateY(-20px);
   opacity: 0;
-  transform: translate(50px, 0);
 }
 </style>

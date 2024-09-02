@@ -23,7 +23,7 @@ onMounted(() => {
 
 <template>
     <div ref="preloaderRef"
-        class="fixed top-0 left-0 z-[9999] flex items-center justify-center w-full h-screen transition-opacity duration-300 preloader bg-blue-500">
+        class="fixed top-0 left-0 z-[9999] flex items-center justify-center w-full h-screen transition-opacity duration-300 preloader bg-gray-200">
         <span class="loader" />
     </div>
 </template>
@@ -34,47 +34,38 @@ onMounted(() => {
 }
 
 .loader {
-    width: 70px;
-    height: 35px;
+    width: 84px;
+    height: 84px;
     position: relative;
-    overflow: hidden;
 }
 
-.loader:before {
+.loader:before,
+.loader:after {
     content: "";
-    width: 70px;
-    height: 70px;
     position: absolute;
-    left: 0;
-    top: 0;
-    border: 5px solid #0000;
-    border-color: #fff #fff #0000 #0000;
+    left: 50%;
+    bottom: 0;
+    width: 64px;
+    height: 64px;
     border-radius: 50%;
-    box-sizing: border-box;
-    animation: rotate 3s ease-in-out infinite;
-    transform: rotate(-200deg);
+    background: #FFF;
+    transform: translate(-50%, -100%) scale(0);
+    animation: push 2s infinite linear;
 }
 
-@keyframes rotate {
-    0% {
-        border-width: 10px;
-    }
+.loader:after {
+    animation-delay: 1s;
+}
 
-    25% {
-        border-width: 3px;
-    }
+@keyframes push {
 
+    0%,
     50% {
-        transform: rotate(115deg);
-        border-width: 10px;
-    }
-
-    75% {
-        border-width: 3px;
+        transform: translate(-50%, 0%) scale(1)
     }
 
     100% {
-        border-width: 10px;
+        transform: translate(-50%, -100%) scale(0)
     }
 }
 </style>

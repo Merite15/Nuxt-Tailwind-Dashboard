@@ -1,4 +1,15 @@
 <script setup lang="ts">
+definePageMeta({
+    name: 'Connexion',
+})
+
+useHead({
+    htmlAttrs: {
+        lang: 'fr',
+    },
+    title: 'Connexion',
+})
+
 interface User {
     email: string
     password: string
@@ -19,10 +30,18 @@ const loading = ref<boolean>(false)
 
 async function Login() {
     loading.value = true
+
     display_error.value = ''
+
     display_errors.value = ''
 
-    navigateTo('/dashboard')
+    setTimeout(() => {
+        loading.value = false
+
+        localStorage.setItem('user', 'merite')
+
+        navigateTo('/dashboard')
+    }, 500)
 }
 </script>
 
@@ -36,8 +55,6 @@ async function Login() {
                     <NuxtLink to="/">
                         <h1 class="text-2xl mt-5 font-semibold">DASHBOARD</h1>
                     </NuxtLink>
-
-                    <ThemeColor />
                 </div>
 
                 <div class="w-4/6">
