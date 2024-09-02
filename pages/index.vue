@@ -36,8 +36,6 @@ async function Login() {
                     <NuxtLink to="/">
                         <h1 class="text-2xl mt-5 font-semibold">DASHBOARD</h1>
                     </NuxtLink>
-
-                    <ThemeColor />
                 </div>
 
                 <div class="w-4/6">
