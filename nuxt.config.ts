@@ -3,7 +3,7 @@ export default defineNuxtConfig({
     pageTransition: { name: 'slide-right', mode: 'out-in' },
     layoutTransition: { name: 'slide-right', mode: 'out-in' },
     head: {
-      title: "FORMATION-NUXT",
+      title: "Nuxt-Dashboard",
       meta: [
         {
           charset: "utf-8",
@@ -15,7 +15,7 @@ export default defineNuxtConfig({
         {
           hid: "description",
           name: "description",
-          content: "WEBSITE",
+          content: "Nuxt Dashboard",
         },
       ],
       link: [{ rel: "icon", type: "image/x-icon", href: "/logo.ico" }],
