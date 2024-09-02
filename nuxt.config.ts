@@ -3,7 +3,7 @@ export default defineNuxtConfig({
     pageTransition: { name: 'page', mode: 'out-in' },
     layoutTransition: { name: 'layout', mode: 'out-in' },
     head: {
-      title: "FORMATION-NUXT",
+      title: "NUXT-DASHBOARD",
       meta: [
         {
           charset: "utf-8",
@@ -15,7 +15,7 @@ export default defineNuxtConfig({
         {
           hid: "description",
           name: "description",
-          content: "WEBSITE",
+          content: "Nuxt dashboard",
         },
       ],
       link: [{ rel: "icon", type: "image/x-icon", href: "/logo.ico" }],
@@ -35,7 +35,7 @@ export default defineNuxtConfig({
     '/dashboard/**': { ssr: false },
   },
 
-  compatibilityDate: '2024-08-13',
+  compatibilityDate: '2024-09-02',
 
   devtools: {
     enabled: true,
