@@ -30,6 +30,7 @@ useHead({
                     <UButton color="green" label="Nouveau produit" />
                 </div>
             </div>
+
             <hr class="mt-6" />
         </div>
 

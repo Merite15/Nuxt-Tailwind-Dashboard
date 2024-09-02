@@ -5,8 +5,8 @@ interface User {
 }
 
 const user = ref<User>({
-    email: '',
-    password: '',
+    email: 'email@gmail.com',
+    password: 'password',
 })
 
 const showPassword = ref<boolean>(false)
@@ -21,6 +21,8 @@ async function Login() {
     loading.value = true
     display_error.value = ''
     display_errors.value = ''
+
+    navigateTo('/dashboard')
 }
 </script>
 
