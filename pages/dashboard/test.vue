@@ -2,6 +2,13 @@
 definePageMeta({
     layout: 'dashboard'
 })
+
+useHead({
+    htmlAttrs: {
+        lang: 'fr',
+    },
+    title: 'Test',
+})
 </script>
 
 <template>

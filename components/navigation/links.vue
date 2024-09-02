@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <div class="bg-white rounded-full flex space-x-3">
+    <div class="bg-white border rounded-full px-0.5 flex space-x-3">
         <NavigationLink link="/dashboard" title="Tableau de bord" />
 
         <NavigationLink link="/dashboard/test" title="Test" />

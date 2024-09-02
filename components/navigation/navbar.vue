@@ -1,5 +1,11 @@
 <script setup lang="ts">
 const route = useRoute()
+
+const login = () => {
+    localStorage.removeItem("user");
+
+    navigateTo('/')
+}
 </script>
 
 <template>
@@ -8,6 +14,7 @@ const route = useRoute()
             {{ route.meta.name?.toUpperCase() ?? 'Overview' }}
         </h1>
 
+        <UIcon class="cursor-pointer" size="30" @click="login" name="material-symbols:logout" />
 
         <NavigationLinks />
 
