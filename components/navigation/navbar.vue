@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const route = useRoute()
 
-const login = () => {
+const logout = () => {
     localStorage.removeItem("user");
 
     navigateTo('/')
@@ -14,12 +14,13 @@ const login = () => {
             {{ route.meta.name?.toUpperCase() ?? 'Overview' }}
         </h1>
 
-        <UIcon class="cursor-pointer" size="30" @click="login" name="material-symbols:logout" />
-
         <NavigationLinks />
 
-        <div class="flex justify-between gap-x-5">
+        <div class="flex justify-between items-center gap-x-5">
             <NetworkStatus />
+
+            <UButton icon="i-material-symbols:logout" size="lg" color="white" @click="logout" variant="solid"
+                class="rounded-full" :trailing="false" />
 
             <UChip text="3" inset size="2xl">
                 <UButton size="md" class="rounded-full shadow-sm" icon="i-heroicons-bell" color="white" />

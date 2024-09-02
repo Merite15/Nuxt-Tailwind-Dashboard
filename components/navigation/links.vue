@@ -6,7 +6,7 @@
     <div class="bg-white border rounded-full px-0.5 flex space-x-3">
         <NavigationLink link="/dashboard" title="Tableau de bord" />
 
-        <NavigationLink link="/dashboard/test" title="Test" />
+        <NavigationLink link="/dashboard/localities" title="Localités" />
 
         <NavigationLink link="" title="Liste" />
 
