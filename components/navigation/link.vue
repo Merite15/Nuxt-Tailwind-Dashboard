@@ -2,16 +2,21 @@
 interface LinkType {
     link: string
     title: string
+    icon: string
 }
 
 defineProps<LinkType>()
 </script>
 
 <template>
-    <li class='px-3 border-gray-300 max-lg:border-b max-lg:py-3'>
-        <router-link active-class="text-[#007bff]" class='hover:text-[#007bff]  block font-semibold text-[15px]'
-            :to="link">{{ title
-            }}</router-link>
+    <li class='px-3'>
+        <NuxtLink active-class=" bg-blue-500 rounded-xl text-white"
+            class='p-2 gap-x-4 flex items-center hover:bg-blue-500 hover:rounded-xl transition-all hover:text-white font-semibold text-[15px] dark:text-white'
+            :to="link">
+            <UIcon :name="icon" />
+
+            {{ title }}
+        </NuxtLink>
     </li>
 </template>
 

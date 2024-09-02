@@ -23,7 +23,7 @@ onMounted(() => {
 
 <template>
     <div ref="preloaderRef"
-        class="fixed top-0 left-0 z-[9999] flex items-center justify-center w-full h-screen transition-opacity duration-300 preloader bg-cyan-500">
+        class="fixed top-0 left-0 z-[9999] flex items-center justify-center w-full h-screen transition-opacity duration-300 preloader bg-blue-500">
         <span class="loader" />
     </div>
 </template>

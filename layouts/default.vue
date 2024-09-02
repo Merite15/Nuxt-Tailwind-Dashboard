@@ -1,16 +1,6 @@
 <template>
-    <div class="relative">
-        <Preloader />
-
-        <NavigationHeader />
-
-        <div>
-            <slot />
-        </div>
-
-        <ToTop />
-
-        <NavigationFooter />
+    <div class="relative min-h-screen bg-white  tracking-wider">
+        <slot />
     </div>
 </template>
 

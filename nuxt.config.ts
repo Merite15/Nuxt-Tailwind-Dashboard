@@ -29,6 +29,12 @@ export default defineNuxtConfig({
     },
   },
 
+  routeRules: {
+    '/': { prerender: true },
+    '/auth/**': { prerender: true },
+    '/dashboard/**': { ssr: false },
+  },
+
   compatibilityDate: '2024-08-13',
 
   devtools: {
@@ -41,7 +47,7 @@ export default defineNuxtConfig({
 
   icon: {
     serverBundle: {
-      collections: ['bx', 'heroicons', 'material-symbols', 'mdi', 'ph', 'octicon', 'tabler', 'line-md']
+      collections: ['bx', 'heroicons', 'material-symbols', 'mdi', 'ph', 'octicon', 'logos', 'tabler', 'line-md']
     }
   },
 
