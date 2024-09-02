@@ -11,18 +11,16 @@ const user = ref<User>({
 
 const showPassword = ref<boolean>(false)
 
-const display_error = ref<string>('')
-
-const display_errors = ref<string>('')
-
 const loading = ref<boolean>(false)
 
 async function Login() {
     loading.value = true
-    display_error.value = ''
-    display_errors.value = ''
 
-    navigateTo('/dashboard')
+    setTimeout(() => {
+        loading.value = false
+
+        navigateTo('/dashboard')
+    }, 1000)
 }
 </script>
 
@@ -44,12 +42,6 @@ async function Login() {
                     <div class="space-y-2 mt-40">
                         <h3 class="uppercase text-2xl font-semibold">Connexion</h3>
                     </div>
-
-                    <UAlert icon="i-heroicons-exclamation-triangle" color="red" v-show="display_error"
-                        :title="display_error" class="mt-3" />
-
-                    <UAlert v-for="(error, i) in display_errors" :key="i" icon="i-heroicons-exclamation-triangle"
-                        color="red" v-show="display_errors" :title="error" class="mt-3" />
 
                     <UForm :state="user" class="lg:w-10/12 w-full space-y-6 mt-6" @submit="Login">
                         <UFormGroup label="Email" name="email">

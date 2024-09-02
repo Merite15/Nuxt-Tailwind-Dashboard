@@ -30,11 +30,9 @@ useHead({
                     <UButton color="green" label="Nouveau produit" />
                 </div>
             </div>
-
-            <hr class="mt-6" />
         </div>
 
-        <div class="grid grid-cols-1 gap-4 md:grid-cols-3 lg:gap-8">
+        <div class="grid grid-cols-1 gap-4 mt-4 md:grid-cols-3 lg:gap-8">
             <Card v-for="item in cardData" :key="item.title" :provenance="item.provenance" :icon="item.icon"
                 :number="item.number" :title="item.title" :color="item.color" />
         </div>
