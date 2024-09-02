@@ -11,7 +11,7 @@ defineProps<LinkType>()
 <template>
     <li class='px-3'>
         <NuxtLink active-class=" bg-blue-500 rounded-xl text-white"
-            class='p-2 gap-x-4 flex items-center hover:bg-blue-500 hover:rounded-xl transition-all hover:text-white font-semibold text-[15px] dark:text-white'
+            class='p-2 gap-x-4 flex items-center hover:bg-blue-500 hover:rounded-xl transition-all hover:text-white font-semibold text-[15px] '
             :to="link">
             <UIcon :name="icon" />
 
