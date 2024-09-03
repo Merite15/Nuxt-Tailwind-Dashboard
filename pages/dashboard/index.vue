@@ -10,8 +10,6 @@ useHead({
     },
     title: 'Tableau de bord',
 })
-
-const user = localStorage.getItem('user')
 </script>
 
 <template>

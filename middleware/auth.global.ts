@@ -9,6 +9,7 @@ export default defineNuxtRouteMiddleware((to, from) => {
 
     if (user !== 'merite' && to?.path !== '/') {
         abortNavigation();
+
         return navigateTo('/');
     }
 })

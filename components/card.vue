@@ -33,13 +33,13 @@ const btnClasses = computed(() => {
         <div class="flex grow items-center justify-between p-5">
             <dl>
                 <dt class="text-2xl font-bold">${{ number.toLocaleString('de-DE') }}</dt>
+
                 <dd class="text-sm font-medium text-slate-500">
                     {{ title }}
                 </dd>
             </dl>
 
             <div :class="btnClasses" class="flex h-12 w-12 items-center justify-center rounded-xl border">
-
                 <Icon :name="icon" />
             </div>
         </div>

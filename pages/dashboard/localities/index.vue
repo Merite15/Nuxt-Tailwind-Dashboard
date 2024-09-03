@@ -11,9 +11,6 @@ useHead({
     title: 'Liste des localités',
 })
 
-
-
-
 const q = ref('')
 
 const page = ref(1)
