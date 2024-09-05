@@ -17,13 +17,13 @@ onMounted(() => {
                 unref(preloaderRef).classList.add("hide");
             }
         }
-    }, 300);
+    }, 500);
 });
 </script>
 
 <template>
     <div ref="preloaderRef"
-        class="fixed top-0 left-0 z-[9999] flex items-center justify-center w-full h-screen transition-opacity duration-300 preloader bg-gray-100">
+        class="fixed top-0 left-0 z-[9999] flex items-center justify-center w-full h-screen transition-opacity duration-300 preloader bg-blue-100">
         <span class="loader" />
     </div>
 </template>
