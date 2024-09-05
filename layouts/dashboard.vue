@@ -5,13 +5,13 @@ provide('confirm', confirm)
 </script>
 
 <template>
-    <div class="flex h-screen tracking-wider fixed w-full transition duration-200">
+    <div class="flex h-screen  fixed w-full transition duration-200">
         <Preloader />
 
         <NavigationSidebar />
 
         <main
-            class="flex flex-1 overflow-y-scroll flex-col lg:rounded-l-[30px] lg:rounded-r-[30px] m-4 rounded-none bg-white shadow-sm  border py-4 px-6 transition-colors ease-in-out duration-200 delay-75">
+            class="flex flex-1 overflow-y-scroll flex-col lg:rounded-r-[20px] border m-2 rounded-none bg-[#ECF1F4] py-4 px-6 transition-colors ease-in-out duration-200 delay-75">
 
             <NavigationNavbar />
 

@@ -10,12 +10,12 @@ defineProps<LinkType>()
 
 <template>
     <li class='px-3'>
-        <NuxtLink active-class=" bg-blue-500 rounded-xl text-white"
-            class='p-2 gap-x-4 flex items-center hover:bg-blue-500 hover:rounded-xl transition-all hover:text-white font-semibold text-[15px] '
+        <NuxtLink active-class=" bg-[#DDE8EA] rounded-xl text-[#18484A]"
+            class='px-2 py-3 gap-x-4 flex items-center hover:bg-[#DDE8EA] hover:rounded-xl transition-all hover:text-[#18484A] font-medium'
             :to="link">
             <UIcon :name="icon" />
 
-            {{ title }}
+            <span>{{ title }}</span>
         </NuxtLink>
     </li>
 </template>
