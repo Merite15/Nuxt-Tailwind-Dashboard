@@ -2,6 +2,11 @@
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
+## Screenshots
+
+![App Screenshot](screen1.png)
+![App Screenshot](screen2.png)
+
 ## Setup
 
 Make sure to install the dependencies:
