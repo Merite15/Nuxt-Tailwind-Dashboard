@@ -10,10 +10,10 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@nuxt/fonts": "^0.7.1",
-    "@nuxt/ui": "2.18.4",
-    "@iconify/json": "^2.2.236",
+    "@iconify/json": "^2.2.258",
+    "@nuxt/fonts": "^0.10.0",
+    "@nuxt/ui": "2.18.7",
     "nuxt": "^3.12.4",
-    "vue": "latest"
+    "vue": "^3.5.11"
   }
 }

@@ -1,6 +1,7 @@
 <template>
     <div
         class="overflow-y-auto bg-white dark:bg-slate-800 dark:border-slate-800 shadow w-72 border m-4 text-black lg:rounded-l-[30px] lg:rounded-r-[30px] transition-colors ease-in-out duration-200 delay-75">
+
         <aside class="flex flex-col justify-between h-full pt-4 ">
             <div>
                 <p class="flex items-center gap-x-3 my-2 mx-4 px-4  text-black dark:text-white">
