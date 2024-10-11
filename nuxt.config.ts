@@ -29,6 +29,10 @@ export default defineNuxtConfig({
     },
   },
 
+  future: {
+    compatibilityVersion: 4
+  },
+
   routeRules: {
     '/': { prerender: true },
     '/auth/**': { prerender: true },
